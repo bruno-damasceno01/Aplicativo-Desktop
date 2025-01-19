@@ -10,7 +10,6 @@ Rectangle{
     border.width: 2
     // Posição atual do carrossel
     property int currentIndex: 0
-    property int totalCartoes: usuarios.count
     // Função para decrementar o currentIndex
     function decrementCurrentIndex() {
         currentIndex = (currentIndex - 1 + 12) % 12
@@ -82,7 +81,7 @@ Rectangle{
                     target: cartaoinfo
                     property: "x"
                     from: cartaoinfo.x
-                    to: 680
+                    to: 220
                     duration: 1000
                     easing.type: Easing.InOutQuad
                 }
@@ -104,7 +103,7 @@ Rectangle{
                     target: cartaoinfo
                     property: "x"
                     from: cartaoinfo.x
-                    to: 485
+                    to: 0
                     duration: 1000
                     easing.type: Easing.InOutQuad
                 }
@@ -121,8 +120,6 @@ Rectangle{
                 }
             }
         Rectangle{
-            x: 505
-            y: 145
             id: cartaoinfo
             width: 240
             height: 190
