@@ -81,7 +81,7 @@ Rectangle{
                     target: cartaoinfo
                     property: "x"
                     from: cartaoinfo.x
-                    to: 220
+                    to: 660
                     duration: 1000
                     easing.type: Easing.InOutQuad
                 }
@@ -103,7 +103,7 @@ Rectangle{
                     target: cartaoinfo
                     property: "x"
                     from: cartaoinfo.x
-                    to: 0
+                    to: 500
                     duration: 1000
                     easing.type: Easing.InOutQuad
                 }
@@ -119,7 +119,10 @@ Rectangle{
                     }
                 }
             }
+        }
         Rectangle{
+            x: 500
+            y: 144
             id: cartaoinfo
             width: 240
             height: 190
@@ -127,6 +130,5 @@ Rectangle{
             radius: 15
             opacity: 0
             }
-        }
     }
 }
